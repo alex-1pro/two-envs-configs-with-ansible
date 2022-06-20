@@ -1,2 +1,2 @@
 # two-envs-configs-with-ansible
-Create two envirments one for staging and anther for prodaction, configures then with ansible.
+Created two environments one for staging and another for production, and configured them with ansible.
