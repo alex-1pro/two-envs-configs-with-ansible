@@ -1,0 +1,9 @@
+---
+- hosts: all
+  task:
+    - name: Clone a bootcamp-app from github
+      git:
+        repo: https://github.com/alex-1pro/bootcamp-app.git
+        dest: /home/ubuntu
+        clone: yes
+        update: yes
