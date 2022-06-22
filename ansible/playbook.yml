@@ -13,7 +13,7 @@
     - name: Clone a bootcamp-app from github
       git:
         repo: "{{ github_repo }}"
-        dest: /home/ubuntu/bootcamp-app
+        dest: "{{ repo_path }}"
         clone: yes
         update: yes
 
@@ -25,7 +25,7 @@
     - name: Copy .env file
       copy:
        src: /home/ubuntu/.env
-       dest: /home/ubuntu/bootcamp-app
+       dest: "{{ repo_path }}"
        owner: ubuntu
        group: ubuntu
        mode: "0644"
