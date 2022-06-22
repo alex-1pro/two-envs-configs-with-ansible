@@ -10,6 +10,9 @@ module "staging-evn" {
   network_address = ["10.1.0.0/16"]
   public_subnet_address = ["10.1.1.0/24"]
   private_subnet_address = ["10.1.2.0/24"]
+  source_address_prefix_public_subnet_nsg_rule_ssh = "10.1.0.0/16"
+  source_address_prefix_private_subnet_nsg_rule_ssh = "10.1.0.0/16"
+  source_address_prefix_private_subnet_nsg_rule_postgresql = "10.1.0.0/16"
   data_base_name = "postgres-db-server-123"
 }
 
@@ -25,5 +28,8 @@ module "production-evn" {
   network_address = ["10.2.0.0/16"]
   public_subnet_address = ["10.2.1.0/24"]
   private_subnet_address = ["10.2.2.0/24"]
-  data_base_name = "postgres-db-server-123-dev"
+  source_address_prefix_public_subnet_nsg_rule_ssh = "10.2.0.0/16"
+  source_address_prefix_private_subnet_nsg_rule_ssh = "10.2.0.0/16"
+  source_address_prefix_private_subnet_nsg_rule_postgresql = "10.2.0.0/16"
+  data_base_name = "postgres-db-server-123-pro"
 }
