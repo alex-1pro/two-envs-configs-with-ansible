@@ -25,8 +25,8 @@
       copy:
        src: "{{ path_to_env }}"
        dest: "{{ repo_path }}"
-       owner: ubuntu
-       group: ubuntu
+       owner: "{{ owner}}"
+       group: "{{ group }}"
        mode: "0644"
 
     - name: Init database for Bootcamp-app Weight Tracker

@@ -15,11 +15,11 @@
  }
 
  variable "staging_admin_username" {
-  default = "ubuntu"
+  default = "your_admin_username"
  }
 
  variable "staging_admin_password" {
-  default = "123456789Al!"
+  default = "p@ssw0rd42"
  }
 
  variable "staging_network_address" {
@@ -47,7 +47,7 @@
  }
 
   variable "staging_data_base_name" {
- default = "postgres-db-server-123"
+ default = "postgres-db-server-123-staging"
  }
 
 variable "staging_postgresql_db_login" {
@@ -75,11 +75,11 @@ variable "staging_postgresql_db_login" {
  }
 
  variable "production_admin_username" {
-  default = "ubuntu"
+  default = "your_admin_username"
  }
 
  variable "production_admin_password" {
-  default = "123456789Al!"
+  default = "p@ssw0rd42"
  }
 
  variable "production_network_address" {
@@ -107,7 +107,7 @@ variable "staging_postgresql_db_login" {
  }
 
   variable "production_data_base_name" {
- default = "postgres-db-server-123"
+ default = "postgres-db-server-123-production"
  }
 
 variable "production_postgresql_db_login" {
