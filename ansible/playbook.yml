@@ -1,14 +1,13 @@
 ---
 - name: config vms
-  hosts: all
-  vars:
-      repo_path: /home/ubuntu/bootcamp-app
-      github_repo: https://github.com/alex-1pro/bootcamp-app.git
+  hosts: "{{ servers }}"
+  vars_files:
+      - config_vars
   tasks:
 
     - name: install node
       shell: |
-          curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - && sudo apt-get install -y nodejs
+          curl -sL "{{ node_js }}" | sudo -E bash - && sudo apt-get install -y nodejs
 
     - name: Clone a bootcamp-app from github
       git:
@@ -24,7 +23,7 @@
 
     - name: Copy .env file
       copy:
-       src: /home/ubuntu/.env
+       src: "{{ path_to_env }}"
        dest: "{{ repo_path }}"
        owner: ubuntu
        group: ubuntu
@@ -39,7 +38,7 @@
       ansible.builtin.cron:
         name: "a job for reboot"
         special_time: reboot
-        job: sh -c "cd /home/ubuntu/bootcamp-app && npm run dev"
+        job: sh -c "cd {{ repo_path }}  && npm run dev"
 
     - name: reboot the vm's
       become: true
