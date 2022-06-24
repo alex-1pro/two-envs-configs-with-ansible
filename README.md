@@ -4,7 +4,10 @@
 
 
 #  Diagrams of infrastructure
-![](images/production-env.png) ![](images/staging-env.png)
+# <ins>Production:</ins>
+![](images/production-env.png) 
+# <ins>Staging:</ins>
+![](images/staging-env.png)
 
 
 
