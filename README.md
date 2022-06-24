@@ -1,4 +1,4 @@
-# <ins>Created two environments one for staging and another for production, and configured them with ansible and install on then Weight Tracker.</ins>
+# <ins>Created two environments one for staging, another for production, and configured them with ansible and install on then Weight Tracker.</ins>
 
 #### <ins>Weight Tracker repository:</ins> https://github.com/alex-1pro/bootcamp-app.git
 
