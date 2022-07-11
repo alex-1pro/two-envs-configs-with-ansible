@@ -13,7 +13,6 @@
 
 # <ins>Ansible directory has playbook.yml file<ins>
 ## playbook.yml get variables from config_vars.
-## <ins>example for config_vars file:</ins>
 
 <h3><ins>Example of config_vars file:</ins></h3>
 <pre>
