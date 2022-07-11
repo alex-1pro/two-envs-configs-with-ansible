@@ -10,7 +10,6 @@
 
 <h3><ins>Example of config_vars file:</ins></h3>
 <pre>
- 
 servers: staging /** name of servers group for config **/
 repo_path: /home/user/path_to_app_repository /** path to application directory **/
 github_repo: https://github.com/alex-1pro/bootcamp-app.git /** link to application code repository **/

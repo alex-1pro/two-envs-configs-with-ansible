@@ -15,13 +15,16 @@
 ## playbook.yml get variables from config_vars.
 ## <ins>example for config_vars file:</ins>
 
-#### servers: staging   /** name of servers group for config **/
-#### repo_path: /home/user/path_to_app_repository  /** path to application directory  **/
-#### github_repo: https://github.com/alex-1pro/bootcamp-app.git  /** link to application code repository **/
-#### node_js: https://deb.nodesource.com/setup_14.x  /** Script to install the NodeSource Node.js 14.x repo onto a Debian or Ubuntu system. **/
-#### path_to_env: /home/user/path_to_env_file  /** path to .env file **/
-#### owner: user 
-#### group: user
+<h3><ins>Example of config_vars file:</ins></h3>
+<pre>
+servers: staging /** name of servers group for config **/
+repo_path: /home/user/path_to_app_repository /** path to application directory **/
+github_repo: https://github.com/alex-1pro/bootcamp-app.git /** link to application code repository **/
+node_js: https://deb.nodesource.com/setup_14.x /** Script to install the NodeSource Node.js 14.x repo onto a Debian or Ubuntu system. **/
+path_to_env: /home/user/path_to_env_file /** path to .env file **/
+owner: user
+group: user
+</pre>
 
 # <ins>Terraform directory<ins>
 ## This directory contains terraform files for create 2 environments.
